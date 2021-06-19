@@ -15,19 +15,19 @@ console.log(text)
 // }
 
 // Function to handle input change
-function handleChange(event) {
-//   // grab the value of the input field
-  var text = d3.select("#datetime").on("mouseover", function(){
-    d3.select(this);
+// function handleChange(event) {
+// //   // grab the value of the input field
+//   var text = d3.select("#datetime").on("click", function(){
+//     d3.select(this);
 
-    // Get current event info
-    console.log(text);
-  })
+//     // Get current event info
+//     console.log(text);
+//   })
 
   
 
 
-//     var filteredData = tableData.filter(entry => entry.datetime === inputText);
+    var filteredData = tableData.filter(entry => entry.datetime === inputText);
 
 //   console.log(filteredData);
   
@@ -43,12 +43,12 @@ function handleChange(event) {
 //       // in the weather report object
 //       var cell = row.append("td");
 //       cell.text(value);
-    // });
-    // var text = inputText
+//     });
+//     var text = inputText
     
 // });
 // var text = inputText
-text.on("change", handleChange);
-console.log(text);
-};
+// text.on("click", handleChange);
+// console.log(text);
+// };
 
