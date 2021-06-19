@@ -4,7 +4,7 @@ var tableData = data;
 var tbody = d3.select("tbody");
 
 // grab references to the input element and the output div
-var text = d3.select(".form-control-1");
+var text = d3.select("#datetime");
 console.log(text)
 
 // var output = d3.select(".output");
@@ -17,8 +17,12 @@ console.log(text)
 // Function to handle input change
 function handleChange(event) {
 //   // grab the value of the input field
-  var text = d3.event.target.value;
-  console.log(text);
+  var text = d3.select("#datetime").on("mouseover", function(){
+    d3.select(this);
+
+    // Get current event info
+    console.log(text);
+  })
 
   
 
