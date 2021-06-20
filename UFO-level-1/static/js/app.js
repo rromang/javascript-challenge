@@ -26,7 +26,6 @@ var button = d3.select("#filter-btn");
 
 // Create event handlers 
 button.on("click", runEnter);
-// form.on("submit",runEnter);
 
 // Complete the event handler function for the form
 function runEnter() {
@@ -44,7 +43,6 @@ function runEnter() {
   console.log(sight);
 
   var filteredData = sight.filter(entry => entry.datetime === inputValue);
-//   var filteredData = people.filter(person => person.bloodType === inputValue);
 
   console.log(filteredData);
   
