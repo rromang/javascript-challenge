@@ -4,7 +4,7 @@ var tableData = data;
 var tbody = d3.select("tbody");
 
 // grab references to the input element and the output div
-var text = d3.select("#datetime");
+var text = d3.select("#datetime").value;
 console.log(text)
 
 // var output = d3.select(".output");
@@ -16,18 +16,18 @@ console.log(text)
 
 // Function to handle input change
 // function handleChange(event) {
-// //   // grab the value of the input field
-//   var text = d3.select("#datetime").on("click", function(){
-//     d3.select(this);
+//   // grab the value of the input field
+  var inputText = d3.select("#datetime").on("clicl", function(){
+    d3.select(this).value;
 
-//     // Get current event info
-//     console.log(text);
-//   })
+// //     // Get current event info
+    console.log(inputText);
+  })
 
   
 
 
-    var filteredData = tableData.filter(entry => entry.datetime === inputText);
+//     var filteredData = tableData.filter(entry => entry.datetime === inputText);
 
 //   console.log(filteredData);
   
