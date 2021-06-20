@@ -20,7 +20,7 @@
 #### 2. Reference the table body
 #### 3. Reference the input element (repeated for date, city, state, country, shape)
 #### 4. Create function for when the input field is clicked.
-#### 6. Create function for when the input field is changed by adding input text
+#### 5. Create function for when the input field is changed by adding input text
 #### 6. Set new input text as filter variable
 #### 7. Loop through the dataset to retrieve the matching entries and append them to the html table.
 
