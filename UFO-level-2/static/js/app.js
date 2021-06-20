@@ -4,51 +4,120 @@ var tableData = data;
 var tbody = d3.select("tbody");
 
 // grab references to the input element and the output div
-var text = d3.select("#datetime").value;
-console.log(text)
+// var text = d3.select("#datetime").value;
+// console.log(text)
+var inputText = d3.select("#datetime");
+console.log(inputText);
 
-// var output = d3.select(".output");
+function handleClick() {
+    console.log("form clicked!")
 
-// // Function to reverse a string
-// function reverseString(str) {
-//   return str.split("").reverse().join("");
-// }
+    console.log(d3.event.target);
 
-// Function to handle input change
-// function handleChange(event) {
-//   // grab the value of the input field
-  var inputText = d3.select("#datetime").on("clicl", function(){
-    d3.select(this).value;
+}
 
-// //     // Get current event info
-    console.log(inputText);
-  })
+inputText.on('click', handleClick);
 
-  
+var inputField = d3.select('#datetime');
 
+inputField.on("change", function(){
+  var newInput = d3.event.target.value;
+  console.log(newInput);
 
-//     var filteredData = tableData.filter(entry => entry.datetime === inputText);
+  var filteredData = tableData.filter(entry => entry.datetime === newInput);
+  console.log(filteredData);
+  filteredData.forEach(function(ufoReport) {
+    console.log(ufoReport);
+    var row = tbody.append("tr");
+    Object.entries(ufoReport).forEach(function([key, value]) {
+      console.log(key, value);
+      // Append a cell to the row for each value
+      // in the weather report object
+      var cell = row.append("td");
+      cell.text(value);
+    });
+  });
+});
 
-//   console.log(filteredData);
-  
-//   var tbody = d3.select("tbody")
-//   tbody.html("");
+var inputField = d3.select('#city');
 
-//   filteredData.forEach(function(event) {
-//     console.log(event);
-//     var row = tbody.append("tr");
-//     Object.entries(ufoReport).forEach(function([key, value]) {
-//       console.log(key, value);
-//       // Append a cell to the row for each value
-//       // in the weather report object
-//       var cell = row.append("td");
-//       cell.text(value);
-//     });
-//     var text = inputText
-    
-// });
-// var text = inputText
-// text.on("click", handleChange);
-// console.log(text);
-// };
+inputField.on("change", function(){
+  var newInput = d3.event.target.value;
+  console.log(newInput);
 
+  var filteredData = tableData.filter(entry => entry.city === newInput);
+  console.log(filteredData);
+  filteredData.forEach(function(ufoReport) {
+    console.log(ufoReport);
+    var row = tbody.append("tr");
+    Object.entries(ufoReport).forEach(function([key, value]) {
+      console.log(key, value);
+      // Append a cell to the row for each value
+      // in the weather report object
+      var cell = row.append("td");
+      cell.text(value);
+    });
+  });
+});
+var inputField = d3.select('#state');
+
+inputField.on("change", function(){
+  var newInput = d3.event.target.value;
+  console.log(newInput);
+
+  var filteredData = tableData.filter(entry => entry.state === newInput);
+  console.log(filteredData);
+  filteredData.forEach(function(ufoReport) {
+    console.log(ufoReport);
+    var row = tbody.append("tr");
+    Object.entries(ufoReport).forEach(function([key, value]) {
+      console.log(key, value);
+      // Append a cell to the row for each value
+      // in the weather report object
+      var cell = row.append("td");
+      cell.text(value);
+    });
+  });
+});
+
+var inputField = d3.select('#country');
+
+inputField.on("change", function(){
+  var newInput = d3.event.target.value;
+  console.log(newInput);
+
+  var filteredData = tableData.filter(entry => entry.country === newInput);
+  console.log(filteredData);
+  filteredData.forEach(function(ufoReport) {
+    console.log(ufoReport);
+    var row = tbody.append("tr");
+    Object.entries(ufoReport).forEach(function([key, value]) {
+      console.log(key, value);
+      // Append a cell to the row for each value
+      // in the weather report object
+      var cell = row.append("td");
+      cell.text(value);
+    });
+  });
+});
+
+var inputField = d3.select('#shape');
+
+inputField.on("change", function(){
+  var newInput = d3.event.target.value;
+  console.log(newInput);
+
+  var filteredData = tableData.filter(entry => entry.shape === newInput);
+  console.log(filteredData);
+  filteredData.forEach(function(ufoReport) {
+    console.log(ufoReport);
+    var row = tbody.append("tr");
+    Object.entries(ufoReport).forEach(function([key, value]) {
+      console.log(key, value);
+      // Append a cell to the row for each value
+      // in the weather report object
+      var cell = row.append("td");
+      cell.text(value);
+    });
+  });
+});
