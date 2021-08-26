@@ -1,4 +1,8 @@
-# javascript-challenge
+
+# UFO Sightings
+(javascript-challenge)
+
+* Objectives: Activity to fulfill work towards Data Analytics certificate. Work to practice what was learned in class for the javascript topic.
 
 ## Level 1
 
@@ -11,6 +15,8 @@
 #### 5. Create function for running input in the form, filter matching values.
 #### 6. Clear the html table
 #### 7. Append the filtered data to the html table
+
+![ufo-level-1](https://user-images.githubusercontent.com/80008461/131025598-8c7af1f0-50b5-4892-ab1d-2c3cec0c7c49.gif)
 
 ## Level 2
 
